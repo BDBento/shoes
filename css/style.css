@@ -38,11 +38,35 @@ h1{
     font-weight: 400;
 }
 
+
+/*carrocel tegs*/
+
 .carrosel{
     width: 575px;
     height: 575px;
     position: relative;
-    left: 50%;
+    left: 55%;
+    top: -200px;
+}
+
+
+#container{
+    width: 575px;
+    height: auto;
+    margin: 15px auto;
+}
+
+.principal{
+    width: 575px;
+    height: 575px;
+    border: solid black 2px;
+    overflow: hidden;  /* para esconder as outras imagesn*/
+
+}
+
+.slide{
+    display: flex;
+    width: 400%;
 }
 
 
