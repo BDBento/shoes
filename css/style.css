@@ -55,7 +55,6 @@ h1{
     height: auto;
     margin: 15px auto;
 }
-
 .principal{
     width: 575px;
     height: 575px;
@@ -66,7 +65,25 @@ h1{
 
 .slide{
     display: flex;
-    width: 400%;
+    width: 300%;
+    transition: all 0.8s;
+    
 }
+
+label img{
+    padding-top: 80px;
+    cursor: pointer;
+    float: left;
+    width: 100px;
+    height: auto;
+    background-color: #333;
+  
+}
+
+#foto2:checked ~ .principal .slide{
+    margin-left: -100%;
+}
+
+flex-direction: column-reverse;
 
 
