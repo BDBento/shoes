@@ -48,8 +48,7 @@ h2{
 
 .menu ul li a {
     padding: 10px 6% 0px 10px;
-    display: inline-block;
-    /* visual do link */
+    display: inline-block;/* visual do link */
     background-color:#ffffff;
     color: #333;
    
@@ -72,10 +71,15 @@ h2{
 .texto-baner-2{
     display: block;
     font-size:22px;
-    font-weight: 400;
-    margin: 0px 0px 0px 170px;
+    font-weight: 700;
+    margin: 0px 0px 30px 170px;
     padding-top: 80px;
 }
+
+.texto-baner-2 p{
+    margin-bottom: 150px;
+}
+
 
 .texto-baner h1{
     display: block;
@@ -83,6 +87,16 @@ h2{
     font-weight: 400;
     margin: 0px 0px 0px 80px;
     padding-top: 80px;
+}
+
+.buy{
+    background-color: #ffffff;
+    color:#FF0073;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 20px 90px 20px 90px;
+    border: none;
 }
 
 
@@ -108,6 +122,8 @@ h2{
     padding-left:50px;
     padding-top: 10px;
 }
+
+
 
 section #container {
     display: inline-block;
