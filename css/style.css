@@ -46,9 +46,20 @@ h1{
     height: 575px;
     position: relative;
     left: 55%;
-    top: -200px;
+    top: -25em;
 }
 
+.valor1{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 330px;
+    height: 105px;
+    text-align: left;
+    margin-left: 90px;
+    margin-top: 60px;
+    padding-left:50px;
+    padding-top: 10px;
+}
 
 #container{
     width: 575px;
@@ -67,7 +78,12 @@ h1{
     display: flex;
     width: 300%;
     transition: all 0.8s;
-    
+}
+
+label{
+    position: relative;
+    left: 10px;
+    bottom: -47em;
 }
 
 label img{
@@ -76,14 +92,32 @@ label img{
     float: left;
     width: 100px;
     height: auto;
-    background-color: #333;
+  
   
 }
 
-#foto2:checked ~ .principal .slide{
+#foto2:checked ~ .principal  .slide{
     margin-left: -100%;
 }
 
-flex-direction: column-reverse;
+#foto3:checked ~ .principal  .slide{
+    margin-left: -200%;
+}
+
+input[name="grupo"]{
+    display: none;
+}
+
+input[name="grupo"]:checked + label img {
+    margin-right: 200px;
+    width: 126px;
+    justify-items: auto;
+}
+
+input[id="foto1"]:checked + .valor1 {
+    opacity: 100%;
+}
+
+
 
 
