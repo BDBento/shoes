@@ -1,0 +1,48 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul{
+    padding-top: 10px;
+    background-color: #ffffff;
+    list-style: none;
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu ul li{
+    display: inline;
+}
+
+.menu ul li a {
+    padding: 10px 100px 0px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#ffffff;
+    color: #333;
+    text-decoration: none;
+}
+
+.banner{
+    background-image: linear-gradient(to left, #fce7f6 , #e3eaf8);
+    border-radius: 50px;
+    height: 955px;
+    
+}
+h1{
+    font-size:90px;
+    font-weight: 400;
+}
+
+.carrosel{
+    width: 575px;
+    height: 575px;
+    position: relative;
+    left: 50%;
+}
+
+
