@@ -2,8 +2,32 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/*menu*/
+
+.logo-p{
+    position: absolute;
+    left: 10%;
+    display: block;
+    margin-top:20px;
+    
+}
+
+.logo-p img{
+    margin-right: 15px;
+    margin-top: -20px;
+}
+
+h2{
+    font-size:35px;
+    font-weight: 900;
+    display: inline;
+    top:10px;
+    margin-bottom: 0%;
+}
+
 .menu ul{
     padding-top: 10px;
+    margin: 0px 0px 30px 0px;
     background-color: #ffffff;
     list-style: none;
     text-align: right;
@@ -11,31 +35,54 @@ body{
     display: block;
     font-size: 20px;
     font-weight: 600;
+    z-index: 1;
+    
+   
+
 }
 
 .menu ul li{
     display: inline;
+    
 }
 
 .menu ul li a {
-    padding: 10px 100px 0px 10px;
+    padding: 10px 6% 0px 10px;
     display: inline-block;
-
     /* visual do link */
     background-color:#ffffff;
     color: #333;
-    text-decoration: none;
+   
 }
 
 .banner{
     background-image: linear-gradient(to left, #fce7f6 , #e3eaf8);
     border-radius: 50px;
     height: 955px;
-    
 }
-h1{
+
+.texto-baner{
+    display: block;
     font-size:90px;
     font-weight: 400;
+    margin: 0px 0px 0px 80px;
+    padding-top: 80px;
+}
+
+.texto-baner-2{
+    display: block;
+    font-size:22px;
+    font-weight: 400;
+    margin: 0px 0px 0px 170px;
+    padding-top: 80px;
+}
+
+.texto-baner h1{
+    display: block;
+    font-size:90px;
+    font-weight: 400;
+    margin: 0px 0px 0px 80px;
+    padding-top: 80px;
 }
 
 
@@ -43,15 +90,16 @@ h1{
 
 .carrosel{
     width: 575px;
-    height: 575px;
-    position: relative;
+    height: 200px;
+    margin-bottom: 0px;
+    position: absolute;
     left: 55%;
-    top: -25em;
+    top: 3em;
 }
 
 .valor1{
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 330px;
     height: 105px;
     text-align: left;
@@ -61,17 +109,22 @@ h1{
     padding-top: 10px;
 }
 
+section #container {
+    display: inline-block;
+    margin-top: 0px;
+    height: 0px;
+    
+}
+
 #container{
-    width: 575px;
-    height: auto;
-    margin: 15px auto;
+    width: 600px;
+    border: #333 solid 3px;
 }
 .principal{
     width: 575px;
     height: 575px;
-    border: solid black 2px;
     overflow: hidden;  /* para esconder as outras imagesn*/
-
+    padding-bottom: 100px;
 }
 
 .slide{
@@ -115,7 +168,7 @@ input[name="grupo"]:checked + label img {
 }
 
 input[id="foto1"]:checked + .valor1 {
-    opacity: 100%;
+    background-color: #333;
 }
 
 
