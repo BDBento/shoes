@@ -316,6 +316,14 @@ input[id="foto1"]:checked + .valor1 {
 }
 
 
-@media screen and (min-width: 450px) {
+@media screen and (max-width: 750px) {
+
+    .logo-p{
+        position: absolute;
+        margin: top 10px;
+        padding: 20px;
+        margin: auto;
+        
+    }
     
 }
