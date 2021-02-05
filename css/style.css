@@ -50,14 +50,15 @@ h2{
     display: inline-block;/* visual do link */
     background-color:#ffffff;
     color: #333;
+    text-decoration: none;
    
 }
 
 .menu ul li a:hover{
     padding: 10px 6% 0px 10px;
     display: inline-block;/* visual do link */
-    background-color#FF0073;
-    color: #333;
+    text-decoration: none;
+    color:#FF0073;
 }
 
 
