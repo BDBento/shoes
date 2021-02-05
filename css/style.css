@@ -1,5 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden
 }
 
 /*menu*/
@@ -97,6 +98,15 @@ h2{
     border-radius: 50px;
     padding: 20px 90px 20px 90px;
     border: none;
+    transition: 0.8s;
+}
+
+.buy:hover{
+
+    background-color: #fad1e3;
+    color:#fc7cb5;
+    transition: 0.8s;
+
 }
 
 
@@ -111,16 +121,31 @@ h2{
     top: 3em;
 }
 
-.valor1{
+.valor1 ,.valor2 ,.valor3{
     background-color: #ffffff;
     border-radius: 20px;
-    width: 330px;
-    height: 105px;
+    width: 180px;
+    height: 90px;
     text-align: left;
-    margin-left: 90px;
     margin-top: 60px;
     padding-left:50px;
     padding-top: 10px;
+    position: absolute;
+    top: 800px;
+    overflow: hidden;
+}
+
+.valor1{
+    margin-left: 90px;
+}
+
+.valor2{
+    margin-left: 910px;
+}
+
+.valor3{
+    margin-left: 1440px;
+    
 }
 
 
@@ -134,13 +159,12 @@ section #container {
 
 #container{
     width: 600px;
-    border: #333 solid 3px;
 }
 .principal{
     width: 575px;
-    height: 575px;
+    height: 800px;
     overflow: hidden;  /* para esconder as outras imagesn*/
-    padding-bottom: 100px;
+    
 }
 
 .slide{
@@ -153,6 +177,7 @@ label{
     position: relative;
     left: 10px;
     bottom: -47em;
+    z-index: 1;
 }
 
 label img{
@@ -165,9 +190,37 @@ label img{
   
 }
 
+/*tranziçao das imagens no banner*/
+
 #foto2:checked ~ .principal  .slide{
     margin-left: -100%;
 }
+
+#foto1:checked ~ .principal  .slide .valor3{
+    transition: none;
+}
+
+#foto2:checked ~ .principal  .slide .valor1{
+    right:-300%;
+    transition: none;
+}
+
+#foto2:checked ~ .principal  .slide .valor2{
+    right:25%;
+    transition: none;
+}
+
+#foto3:checked ~ .principal  .slide .valor2{
+    right:300%;
+    transition: none;
+ 
+}
+
+#foto3:checked ~ .principal  .slide .valor1{
+    right:300%;
+    transition: none;
+}
+
 
 #foto3:checked ~ .principal  .slide{
     margin-left: -200%;
