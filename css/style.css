@@ -61,7 +61,7 @@ h2{
     color:#FF0073;
 }
 
-.circulo-1,.circulo-2{
+.circulo-1, .circulo-2, .circulo-3, .circulo-4{
     background-image: radial-gradient(circle , #fed7e9 , #f7f9fd);
     border-radius: 100%;
 
@@ -86,13 +86,19 @@ h2{
 
 .circulo-3{
     padding: 120px;
-    width: 90px;
+    width: 55px;
     position:absolute ;
     margin-top:10px;
-    left: 250x;  
+    left: 60%;  
 }
 
-
+.circulo-4{
+    padding: 30px;
+    width: 20px;
+    position:absolute ;
+    margin-top: 200px;
+    left: 60%;
+}
 
 /*fim menu*/
 
