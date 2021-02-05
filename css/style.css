@@ -61,7 +61,9 @@ h2{
     color:#FF0073;
 }
 
-.circulo-1, .circulo-2, .circulo-3, .circulo-4{
+/* estilisando background*/
+
+.circulo-1, .circulo-2, .circulo-3, .circulo-4, .circulo-5, .circulo-6{
     background-image: radial-gradient(circle , #fed7e9 , #f7f9fd);
     border-radius: 100%;
 
@@ -98,6 +100,22 @@ h2{
     position:absolute ;
     margin-top: 200px;
     left: 60%;
+}
+
+.circulo-5{
+    padding: 55px;
+    width: 35px;
+    position:absolute ;
+    margin-top: 750px;
+    left: 30%;
+}
+
+.circulo-6{
+    padding: 45px;
+    width: 30px;
+    position:absolute ;
+    margin-top: 800px;
+    left: 90%;
 }
 
 /*fim menu*/
@@ -298,6 +316,6 @@ input[id="foto1"]:checked + .valor1 {
 }
 
 
-@media screen and (max-width: 1024px){
-
+@media screen and (min-width: 450px) {
+    
 }
