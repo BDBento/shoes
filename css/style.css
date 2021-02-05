@@ -61,6 +61,17 @@ h2{
     color:#FF0073;
 }
 
+.circulo{
+    padding: 150px;
+    width: 200px;
+    border-radius: 100%;
+    background-image: radial-gradient(circle, #fed7e98c , #f7f9fd75);
+    position:absolute ;
+    top: 100px;
+    z-index: 2;
+
+}
+
 
 /*fim menu*/
 
@@ -252,7 +263,3 @@ input[name="grupo"]:checked + label img {
 input[id="foto1"]:checked + .valor1 {
     background-color: #333;
 }
-
-
-
-
