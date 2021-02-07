@@ -61,6 +61,62 @@ h2{
     color:#FF0073;
 }
 
+/* estilisando background*/
+
+.circulo-1, .circulo-2, .circulo-3, .circulo-4, .circulo-5, .circulo-6{
+    background-image: radial-gradient(circle , #fed7e9 , #f7f9fd);
+    border-radius: 100%;
+
+}
+
+.circulo-1{
+    padding: 150px;
+    width: 110px;   
+    position:absolute ;
+    margin-top: 150px;
+    left: -150px;
+}
+
+.circulo-2{
+    padding: 30px;
+    width: 20px;
+    position:absolute ;
+    margin-top: 750px;
+    left: 100px;
+    
+}
+
+.circulo-3{
+    padding: 120px;
+    width: 55px;
+    position:absolute ;
+    margin-top:10px;
+    left: 60%;  
+}
+
+.circulo-4{
+    padding: 30px;
+    width: 20px;
+    position:absolute ;
+    margin-top: 200px;
+    left: 60%;
+}
+
+.circulo-5{
+    padding: 55px;
+    width: 35px;
+    position:absolute ;
+    margin-top: 750px;
+    left: 30%;
+}
+
+.circulo-6{
+    padding: 45px;
+    width: 30px;
+    position:absolute ;
+    margin-top: 800px;
+    left: 90%;
+}
 
 /*fim menu*/
 
@@ -85,6 +141,7 @@ h2{
     font-weight: 700;
     margin: 0px 0px 30px 170px;
     padding-top: 80px;
+    position: relative;
 }
 
 .texto-baner-2 p{
@@ -98,6 +155,11 @@ h2{
     font-weight: 400;
     margin: 0px 0px 0px 80px;
     padding-top: 80px;
+    position: relative;
+}
+
+.texto-baner h1 strong{
+    font-weight: 900;
 }
 
 .buy{
@@ -254,5 +316,14 @@ input[id="foto1"]:checked + .valor1 {
 }
 
 
+@media screen and (max-width: 750px) {
 
-
+    .logo-p{
+        position: absolute;
+        margin: top 10px;
+        padding: 20px;
+        margin: auto;
+        
+    }
+    
+}
