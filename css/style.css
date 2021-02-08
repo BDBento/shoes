@@ -179,9 +179,7 @@ main{
     color:#fc7cb5;
     transition: 0.8s;
     border: none;
-
 }
-
 
 /*carrocel tegs*/
 
@@ -216,15 +214,13 @@ main{
 }
 
 .valor3{
-    margin-left: 1440px;
-    
+    margin-left: 1440px;  
 }
 
 section #container {
     display: inline-block;
     margin-top: 0px;
     height: 0px;
-    
 }
 
 #container{
@@ -233,17 +229,14 @@ section #container {
 .principal{
     width: 575px;
     height: 800px;
-    overflow: hidden;  /* para esconder as outras imagesn*/
-    
+    overflow: hidden;  /* para esconder as outras imagesn*/ 
 }
 
 .slide{
     display: flex;
     width: 300%;
     transition: all 0.5s;
-
 }
-
 
 label{
     position: relative;
@@ -258,7 +251,6 @@ label img{
     float: left;
     width: 100px;
     height: auto;
-  
   
 }
 
@@ -310,7 +302,7 @@ input[id="foto1"]:checked + .valor1 {
 }
 
 
-/*responsivo*/
+/*responsivo telas ou resuluçoes menores*/
 
 @media screen and (max-width: 1000px){
     header{
@@ -350,27 +342,28 @@ input[id="foto1"]:checked + .valor1 {
     
 }
 
+/*para celulares*/
 
 @media screen and (max-width: 500px) {
-
-    
 
     .banner ,header , main {
         display: block;
         width: 150%;
         overflow-x: hidden;
+        margin: auto 25px;
     
     }
 
     header{
-        height: 75vh;
+        height: 580px;
     }
 
     main{
         background-image: linear-gradient(to left, #fce7f6 , #e3eaf8);
         border-radius: 50px;
-        height: 230vh;
+        height: 75em;
         width: 160vw;
+        
     }
 
     .logo-p{
@@ -391,9 +384,11 @@ input[id="foto1"]:checked + .valor1 {
         text-align: center;
     }
 
+    /*menu responsivo*/
+
     .menu ul{
         padding-top:20px;
-        padding-bottom: 0px;
+        padding-bottom: 20px;
         position: relative;
         float:right ;
         display: inline-block;
@@ -424,25 +419,24 @@ input[id="foto1"]:checked + .valor1 {
         text-decoration: none;
        
     }
+
+    /*banner texto reponsivo*/
        
     .texto-baner{
         display: block;
         font-size:34px;
         font-weight: 700;
-        margin: 0px 10px 30px 10px;
+        margin: 0px 10px 10px 10px;
         padding-top: 20PX;
         position: relative;
         text-align: justify;        
 
     }
 
-
     .texto-baner h1{
-        font-weight: 600;
         font-size: 60px;
-        margin: 5px auto 5px auto;
-        padding: 0px 20px 0px 5px;
-
+        margin: 5px 20px 5px 10px;
+        padding: 0px 40px 0px 5px
         
     }
 
@@ -450,29 +444,38 @@ input[id="foto1"]:checked + .valor1 {
         display: block;
         font-size:34px;
         font-weight: 700;
-        margin: 0px 10px 30px 10px;
-        padding-top: 20%;
+        margin: 0px 30px 30px 10px;
+        padding-top: 5%;
+        padding-bottom: 10%;
         position: relative;
         text-align: justify;
     }
     
     .texto-baner-2 p{
-        margin-bottom: 150px;
-        padding: 0px 20px 0px 20px;
+        margin-bottom: 100px;
+        padding: 0px 10px 0px 20px;
     }
+
+    .texto-baner-2 .buy{
+        position:absolute;
+        top :200px;
+        left: 15%;
+        z-index:initial;
+    }
+
+    /*carrosel responsivo*/
 
     section .carrosel{
         width: 100vw;
-        height: 100vh;
+        height: 50em;
     }
 
     .carrosel{
         display: inline-block;
         position: absolute;
         text-align: left;
-        top: 100%;
         left: 0%;
-        top: 200vh;
+        top: 70em;
 
     }
 
@@ -489,8 +492,12 @@ input[id="foto1"]:checked + .valor1 {
 
 
     .principal{
-        margin-left: 0%;
+        margin-left: 15%;
         overflow: hidden;  /* para esconder as outras imagesn*/ 
+    }
+
+    .fotos-p{
+        margin-right: 200px;
     }
 
     #foto2:checked ~ .principal  .slide{
@@ -510,10 +517,6 @@ input[id="foto1"]:checked + .valor1 {
         display: none;
     }
 
-    /*organiz*/
-
-    
-
     label{
         position:relative ;
         margin: 0px auto 0px auto  ;
@@ -530,24 +533,21 @@ input[id="foto1"]:checked + .valor1 {
         height: auto;   
     }
 
-    
-    
+
     input[name="grupo"]:checked + label img {
         margin-right: 0px;
         text-align: center;
     }
-/*
-    .carrosel{
-        margin-bottom: 0px;
-        position: absolute;
-        
-        top:3em;
-        text-align: right;
-    }
-     /* organizar responsivo*/  
 
+    /*posicionando o circulo*/
+
+    .circulo-1{
+        padding: 120px;
+        width: 60px;   
+        position:absolute ;
+        margin-top: 150px;
+        left: 50px;
+    }
 
     
 }
-
-
