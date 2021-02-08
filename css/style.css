@@ -121,7 +121,7 @@ h2{
 /*fim menu*/
 
 
-.banner{
+main{
     background-image: linear-gradient(to left, #fce7f6 , #e3eaf8);
     border-radius: 50px;
     height: 955px;
@@ -186,12 +186,11 @@ h2{
 /*carrocel tegs*/
 
 .carrosel{
-    width: 575px;
-    height: 200px;
     margin-bottom: 0px;
     position: absolute;
     left: 55%;
-    top: 3em;
+    top:3em;
+    text-align: right;
 }
 
 .valor1 ,.valor2 ,.valor3{
@@ -204,7 +203,7 @@ h2{
     padding-left:50px;
     padding-top: 10px;
     position: absolute;
-    top: 800px;
+    top: 730px;
     overflow: hidden;
 }
 
@@ -213,15 +212,13 @@ h2{
 }
 
 .valor2{
-    margin-left: 910px;
+    margin-left: 770px;
 }
 
 .valor3{
     margin-left: 1440px;
     
 }
-
-
 
 section #container {
     display: inline-block;
@@ -256,7 +253,7 @@ label{
 }
 
 label img{
-    padding-top: 80px;
+    padding-top: 1px;
     cursor: pointer;
     float: left;
     width: 100px;
@@ -267,35 +264,32 @@ label img{
 
 /*tranziçao das imagens no banner*/
 
-#foto2:checked ~ .principal  .slide{
-    margin-left: -100%;
+#foto1:checked ~ .principal  .slide .valor2{
+    display: none;
 }
 
 #foto1:checked ~ .principal  .slide .valor3{
-    transition: none;
+    display: none;
 }
 
 #foto2:checked ~ .principal  .slide .valor1{
-    right:-300%;
-    transition: none;
+    display: none;
 }
 
-#foto2:checked ~ .principal  .slide .valor2{
-    right:25%;
-    transition: none;
-}
-
-#foto3:checked ~ .principal  .slide .valor2{
-    right:300%;
-    transition: none;
- 
+#foto2:checked ~ .principal  .slide .valor3{
+    display: none;
 }
 
 #foto3:checked ~ .principal  .slide .valor1{
-    right:300%;
-    transition: none;
+    display: none;
+}
+#foto3:checked ~ .principal  .slide .valor2{
+    display: none;
 }
 
+#foto2:checked ~ .principal  .slide{
+    margin-left: -100%;
+}
 
 #foto3:checked ~ .principal  .slide{
     margin-left: -200%;
@@ -316,18 +310,244 @@ input[id="foto1"]:checked + .valor1 {
 }
 
 
-@media screen and (max-width: 750px) {
+/*responsivo*/
+
+@media screen and (max-width: 1000px){
+    header{
+        display:grid ;
+        width: 100%;
+        overflow-x: hidden;
+    }
 
     .logo-p{
+        position: relative;
+        margin:50px auto 0px auto;;
+        display: flex;
+    }
+
+    .logo-p img{
+        width: 100px;
+        height:100px;
+    }
+
+    h2{
+        font-size:80px;   
+    }
+    .menu ul{
+        padding-top:30px;
+        padding-bottom: 50px;
+        width: 120%; 
         position: absolute;
-        margin: top 10px;
-        padding: 20px;
-        margin: auto;
+        display: inline;
+        text-align: left;
+    }
+
+    .menu ul li{
+        display: inline;
+        margin-bottom:5px;
         
     }
     
-<<<<<<< HEAD
 }
-=======
+
+
+@media screen and (max-width: 500px) {
+
+    
+
+    .banner ,header , main {
+        display: block;
+        width: 150%;
+        overflow-x: hidden;
+    
+    }
+
+    header{
+        height: 75vh;
+    }
+
+    main{
+        background-image: linear-gradient(to left, #fce7f6 , #e3eaf8);
+        border-radius: 50px;
+        height: 230vh;
+        width: 160vw;
+    }
+
+    .logo-p{
+        display: block;
+        position: static;
+        margin: 10px auto 10px auto;
+        text-align: center;
+        right: 10px;
+    }
+
+    .logo-p img{
+        width: 100px;
+        height: 100px;
+    }
+
+    h2{
+        font-size:80px;
+        text-align: center;
+    }
+
+    .menu ul{
+        padding-top:20px;
+        padding-bottom: 0px;
+        position: relative;
+        float:right ;
+        display: inline-block;
+        text-align: center;
+        width:100%;
+    }
+
+    .menu ul li{
+        display: inline;
+        text-align: center;   
+    }
+
+    .menu ul li a {
+        padding: 10px auto  10px auto ;
+        display: block;/* visual do link */
+        background-color:#ffffff;
+        color: #333;
+        text-decoration: none;
+        font-size: 70px;
+       
+    }
+    
+    .menu ul li a:hover{
+        text-decoration: none;
+        color:#FF0073;
+        padding: 10px auto 15px auto;
+        display: block;/* visual do link */
+        text-decoration: none;
+       
+    }
+       
+    .texto-baner{
+        display: block;
+        font-size:34px;
+        font-weight: 700;
+        margin: 0px 10px 30px 10px;
+        padding-top: 20PX;
+        position: relative;
+        text-align: justify;        
+
+    }
+
+
+    .texto-baner h1{
+        font-weight: 600;
+        font-size: 60px;
+        margin: 5px auto 5px auto;
+        padding: 0px 20px 0px 5px;
+
+        
+    }
+
+    .texto-baner-2{
+        display: block;
+        font-size:34px;
+        font-weight: 700;
+        margin: 0px 10px 30px 10px;
+        padding-top: 20%;
+        position: relative;
+        text-align: justify;
+    }
+    
+    .texto-baner-2 p{
+        margin-bottom: 150px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    section .carrosel{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .carrosel{
+        display: inline-block;
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        left: 0%;
+        top: 200vh;
+
+    }
+
+    section #container {
+        display: inline-block;
+        margin-top: 0px;
+        height: 0px;
+        position: relative;    
+    }
+    
+    .slide{
+        overflow: hidden;
+    }
+
+
+    .principal{
+        margin-left: 0%;
+        overflow: hidden;  /* para esconder as outras imagesn*/ 
+    }
+
+    #foto2:checked ~ .principal  .slide{
+        margin-left: -100%;
+    }
+    
+    #foto3:checked ~ .principal  .slide{
+        margin-left: -200%;
+    }
+     
+    .principal .slide .fotos-p{
+        display: block;
+        width: 380px; 
+    }
+
+    .circulo-3, .circulo-6 , .valor1, .valor2 , .valor3{
+        display: none;
+    }
+
+    /*organiz*/
+
+    
+
+    label{
+        position:relative ;
+        margin: 0px auto 0px auto  ;
+        bottom: 1em;
+
+    }
+    
+    label img{
+        padding-top: 1px;
+        text-align: center;
+        cursor: pointer;
+        float: left;
+        width: 100px;
+        height: auto;   
+    }
+
+    
+    
+    input[name="grupo"]:checked + label img {
+        margin-right: 0px;
+        text-align: center;
+    }
+/*
+    .carrosel{
+        margin-bottom: 0px;
+        position: absolute;
+        
+        top:3em;
+        text-align: right;
+    }
+     /* organizar responsivo*/  
+
+
+    
 }
->>>>>>> 5380d7b5ff53a1a1a1de22f31356dc6dc82ebfad
+
+
