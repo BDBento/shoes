@@ -39,7 +39,7 @@ h2{
 }
 
 .menu ul li a {
-    padding: 10px 6% 0px 10px;
+    padding: 10px 10px 0px 6%;
     display: inline-block;/* visual do link */
     color: #333;
     text-decoration: none;
@@ -116,38 +116,31 @@ main{
     display: block;
     width: 1444px;
     margin: 30px auto;
+    padding: 150px 0px 0px 0px;
 }
 
 .texto-baner{
-    display: block;
+    display: inline;
     font-size:90px;
     font-weight: 400;
-    padding-top: 80px;
-}
-
-.texto-baner-2{
-    display: block;
-    font-size:22px;
-    font-weight: 700;
-    margin: 0px 0px 30px 0px;
-    padding-top: 80px;
-    position: relative;
-}
-
-.texto-baner-2 p{
-    margin-bottom: 150px;
-}
-
-.texto-baner h1{
-    display: block;
-    font-size:90px;
-    font-weight: 400;
-    padding-top: 80px;
     position: relative;
 }
 
 .texto-baner h1 strong{
     font-weight: 900;
+}
+
+.texto-baner-2{
+    display: inline;
+    font-size:22px;
+    font-weight: 700;
+    position: relative; /*para ficar em cima do efeito da bola*/
+    margin: 6em auto 6em auto;
+
+}
+
+.texto-baner-2 p{
+    margin: 6em auto 6em auto;
 }
 
 .buy{
@@ -337,9 +330,8 @@ input[id="foto1"]:checked + .valor1 {
     .banner ,header , main {
         display: block;
         width: 150%;
-        overflow-x: hidden;
         margin: auto 25px;
-    
+        overflow-x: hidden;
     }
 
     header{
@@ -378,7 +370,6 @@ input[id="foto1"]:checked + .valor1 {
         padding-top:20px;
         padding-bottom: 20px;
         position: relative;
-        float:right ;
         display: inline-block;
         text-align: center;
         width:100%;
