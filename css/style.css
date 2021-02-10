@@ -197,11 +197,9 @@ section #container {  /*  essa section que faz as outras imagens invisiveis  */
     display: inline-block;
     margin-top: 0px;
     height: 0px;
-}
-
-#container{
     width: 600px;
 }
+
 .principal{
     width: 575px;
     height: 800px;
