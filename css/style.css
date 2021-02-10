@@ -39,11 +39,12 @@ h2{
 }
 
 .menu ul li a {
-    padding: 10px 10px 0px 6%;
+    padding: 5px 10px 5px 6%;
     display: inline-block;/* visual do link */
     color: #333;
     text-decoration: none;
     font-size: 20px;
+    
    
 }
 
@@ -216,39 +217,21 @@ label{
     position: relative;
     left: 10px;
     bottom: -47em;
-    z-index: 1;
+    z-index: 1;/*produto por cima do preço*/
 }
 
 label img{
-    padding-top: 1px;
     cursor: pointer;
-    float: left;
     width: 100px;
-    height: auto;
-  
 }
 
 /*tranziçao das imagens no banner*/
 
-#foto1:checked ~ .principal  .slide .valor2{
-    display: none;
-}
-
-#foto1:checked ~ .principal  .slide .valor3{
-    display: none;
-}
-
-#foto2:checked ~ .principal  .slide .valor1{
-    display: none;
-}
-
-#foto2:checked ~ .principal  .slide .valor3{
-    display: none;
-}
-
-#foto3:checked ~ .principal  .slide .valor1{
-    display: none;
-}
+#foto1:checked ~ .principal  .slide .valor2 ,
+#foto1:checked ~ .principal  .slide .valor3 ,
+#foto2:checked ~ .principal  .slide .valor1 ,
+#foto2:checked ~ .principal  .slide .valor3 ,
+#foto3:checked ~ .principal  .slide .valor1 ,
 #foto3:checked ~ .principal  .slide .valor2{
     display: none;
 }
@@ -270,12 +253,6 @@ input[name="grupo"]:checked + label img {
     width: 126px;
     justify-items: auto;
 }
-
-input[id="foto1"]:checked + .valor1 {
-    background-color: #333;
-}
-
-
 /*responsivo telas ou resuluçoes menores*/
 
 @media screen and (max-width: 1000px){
