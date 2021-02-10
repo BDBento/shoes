@@ -10,13 +10,13 @@ header {
     margin: 30px auto;
 }
 
-.logo-p{
+#logo-p{
     display: flex;
     float: left;
     top:20px;
 }
 
-.logo-p img{
+#logo-p img{
     margin-right: 15px;
     margin-top: -8px;
 }
@@ -262,13 +262,13 @@ input[name="grupo"]:checked + label img {
         overflow-x: hidden;
     }
 
-    .logo-p{
+    #logo-p{
         position: relative;
         margin:50px auto 0px auto;;
         display: flex;
     }
 
-    .logo-p img{
+    #logo-p img{
         width: 100px;
         height:100px;
     }
@@ -297,34 +297,41 @@ input[name="grupo"]:checked + label img {
 
 @media screen and (max-width: 500px) {
 
+
+    body{
+        width: 160vw;
+        margin: 5% auto 5% auto;
+    }
+
+
     .banner ,header , main {
         display: block;
-        width: 150%;
-        margin: auto 25px;
+        width: 100%;
+        margin: auto 25px auto 25px;
         overflow-x: hidden;
     }
 
     header{
         height: 580px;
+        width: auto;
     }
 
-    main{
+    main ,.banner{
         background-image: linear-gradient(to left, #fce7f6 , #e3eaf8);
         border-radius: 50px;
         height: 75em;
         width: 160vw;
+        margin: auto 5% auto 5%;
         
     }
 
-    .logo-p{
-        display: block;
-        position: static;
-        margin: 10px auto 10px auto;
-        text-align: center;
-        right: 10px;
+    #logo-p{
+        display: inline;
+        margin: 10px auto 10px auto; 
+        text-align: center;    
     }
 
-    .logo-p img{
+    #logo-p img{
         width: 100px;
         height: 100px;
     }
@@ -372,21 +379,14 @@ input[name="grupo"]:checked + label img {
     /*banner texto reponsivo*/
        
     .texto-baner{
-        display: block;
         font-size:34px;
-        font-weight: 700;
-        margin: 0px 10px 10px 10px;
-        padding-top: 20PX;
-        position: relative;
         text-align: justify;        
-
     }
 
     .texto-baner h1{
         font-size: 60px;
-        margin: 5px 20px 5px 10px;
-        padding: 0px 40px 0px 5px
-        
+        margin: 5px 20px 5px 20px;
+        padding: 0px 20px 0px 20px
     }
 
     .texto-baner-2{
@@ -406,9 +406,8 @@ input[name="grupo"]:checked + label img {
     }
 
     .texto-baner-2 .buy{
-        position:absolute;
-        top :200px;
-        left: 15%;
+        position:relative;
+        margin: 0px auto 0 auto;
         z-index:initial;
     }
 
@@ -416,15 +415,12 @@ input[name="grupo"]:checked + label img {
 
     section .carrosel{
         width: 100vw;
-        height: 50em;
     }
 
     .carrosel{
-        display: inline-block;
-        position: absolute;
-        text-align: left;
+        display: inline;
+        position: relative;
         left: 0%;
-        top: 70em;
 
     }
 
@@ -441,7 +437,8 @@ input[name="grupo"]:checked + label img {
 
 
     .principal{
-        margin-left: 15%;
+        margin-left: 9%;
+        margin-bottom: 0px;
         overflow: hidden;  /* para esconder as outras imagesn*/ 
     }
 
@@ -462,7 +459,7 @@ input[name="grupo"]:checked + label img {
         width: 380px; 
     }
 
-    .circulo-3, .circulo-6 , .valor1, .valor2 , .valor3{
+    .circulo-3, .circulo-6 ,.valor1, .valor2 , .valor3{
         display: none;
     }
 
