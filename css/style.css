@@ -254,13 +254,7 @@ input[name="grupo"]:checked + label img {
     justify-items: auto;
 }
 
-/*responsivo telas ou resuluçoes menores*/
-
-#buy-mobil-1,#buy-mobil-3,#buy-mobil-3{/*apenas para mobile*/
-    display: none;
-}
-
-
+/*inicio responsvidade*/
 
 @media screen and (max-width: 1000px){
     header{
@@ -475,7 +469,6 @@ input[name="grupo"]:checked + label img {
     }
     
     label img{
-        padding-top: 1px;
         text-align: center;
         cursor: pointer;
         float: left;
@@ -483,6 +476,7 @@ input[name="grupo"]:checked + label img {
         height: auto;   
     }
 
+    /*comportamento do botao carrocel em mobile*/
 
     input[name="grupo"]:checked + label img {
         margin-right: 0px;
