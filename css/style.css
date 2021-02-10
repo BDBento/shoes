@@ -253,7 +253,14 @@ input[name="grupo"]:checked + label img {
     width: 126px;
     justify-items: auto;
 }
+
 /*responsivo telas ou resuluçoes menores*/
+
+#buy-mobil-1,#buy-mobil-3,#buy-mobil-3{/*apenas para mobile*/
+    display: none;
+}
+
+
 
 @media screen and (max-width: 1000px){
     header{
@@ -360,7 +367,6 @@ input[name="grupo"]:checked + label img {
     .menu ul li a {
         padding: 10px auto  10px auto ;
         display: block;/* visual do link */
-        background-color:#ffffff;
         color: #333;
         text-decoration: none;
         font-size: 70px;
@@ -385,24 +391,22 @@ input[name="grupo"]:checked + label img {
 
     .texto-baner h1{
         font-size: 60px;
-        margin: 5px 20px 5px 20px;
+        margin: 5px 20px 5px 2px;
         padding: 0px 20px 0px 20px
     }
 
     .texto-baner-2{
         display: block;
-        font-size:34px;
         font-weight: 700;
-        margin: 0px 30px 30px 10px;
-        padding-top: 5%;
-        padding-bottom: 10%;
         position: relative;
         text-align: justify;
     }
     
     .texto-baner-2 p{
-        margin-bottom: 100px;
-        padding: 0px 10px 0px 20px;
+        font-size:30px;
+        margin: 100px 10px 0 10px;
+        margin-bottom: 120px;
+        padding: 0px 10px 0px 10px;
     }
 
     .texto-baner-2 .buy{
@@ -494,6 +498,4 @@ input[name="grupo"]:checked + label img {
         margin-top: 150px;
         left: 50px;
     }
-
-    
 }
