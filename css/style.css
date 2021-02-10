@@ -120,28 +120,26 @@ main{
 }
 
 /*parei aqui*/
-.texto-baner{
+
+
+.texto-baner ,.texto-baner-2{
     display: inline;
+    position: relative;
+}
+
+.texto-baner{ 
     font-size:90px;
     font-weight: 400;
-    position: relative;
 }
 
 .texto-baner h1 strong{
     font-weight: 900;
 }
 
-.texto-baner-2{
-    display: inline;
-    font-size:22px;
-    font-weight: 700;
-    position: relative; /*para ficar em cima do efeito da bola*/
-    margin: 6em auto 6em auto;
-
-}
-
 .texto-baner-2 p{
-    margin: 6em auto 6em auto;
+    margin: 6em auto;
+    font-weight: 700;
+    font-size:22px;
 }
 
 .buy{
@@ -158,20 +156,16 @@ main{
 .buy:hover{
 
     background-color: #fad1e3;
-    color:#fc7cb5;
+    color:#ff4f9e;
     transition: 0.8s;
-    border: none;
 }
 
 /*carrocel tegs*/
 
 .carrosel{
-    margin-bottom: 0px;
     position: absolute;
-    float: right;
     left: 55%;
     top:4em;
-    text-align: right;
 }
 
 .valor1 ,.valor2 ,.valor3{
@@ -198,8 +192,8 @@ main{
 .valor3{
     margin-left: 1440px;  
 }
-
-section #container {
+  
+section #container {  /*  essa section que faz as outras imagens invisiveis  */
     display: inline-block;
     margin-top: 0px;
     height: 0px;
