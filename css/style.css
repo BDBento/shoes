@@ -434,7 +434,7 @@ input[name="grupo"]:checked + label img {
 
 
     .principal{
-        margin-left: 9%;
+        margin-left: 1%;
         margin-bottom: 0px;
         overflow: hidden;  /* para esconder as outras imagesn*/ 
     }
